@@ -4,7 +4,7 @@ from firebase_admin import credentials, firestore, initialize_app
 import firebase_admin
 from firebase_admin import credentials
 
-cred = credentials.Certificate("SmartCafeAPI/api/serviceAccountKey.json")
+cred = credentials.Certificate("api/serviceAccountKey.json")
 default_app = initialize_app(cred)
 
 def create_app():
