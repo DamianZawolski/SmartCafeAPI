@@ -2,7 +2,7 @@ from flask import Flask
 from firebase_admin import credentials, initialize_app
 from flask_cors import CORS
 
-cred = credentials.Certificate("serviceAccountKey.json")
+cred = credentials.Certificate("api/serviceAccountKey.json")
 default_app = initialize_app(cred)
 
 def create_app():
